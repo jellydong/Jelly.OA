@@ -1,4 +1,5 @@
 ﻿using Jelly.OA.EFDAL;
+using Jelly.OA.IDAL;
 using Jelly.OA.Model;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,9 @@ namespace Jelly.OA.BLL
     public class UserInfoService
     {
         //这样直接创建，高耦合，不好
-        UserInfoDal userInfoDal = new UserInfoDal();
+        //这样后面不管New什么，只要实现接口的方法就好了，下面的代码不受影响。
+        //依赖接口编程 依赖抽象编程。
+        IUserInfoDal userInfoDal = new UserInfoDal();
 
         public UserInfo Add(UserInfo userinfo)
         {

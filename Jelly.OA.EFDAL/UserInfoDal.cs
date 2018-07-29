@@ -1,4 +1,5 @@
-﻿using Jelly.OA.Model;
+﻿using Jelly.OA.IDAL;
+using Jelly.OA.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Jelly.OA.EFDAL
 {
-    public class UserInfoDal:BaseDal<UserInfo>
+    public class UserInfoDal:BaseDal<UserInfo>,IUserInfoDal
     { 
 
     }

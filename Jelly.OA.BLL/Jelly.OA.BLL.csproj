@@ -48,6 +48,10 @@
       <Project>{A322DF1E-B2B9-476C-BD11-6404C505EE1C}</Project>
       <Name>Jelly.OA.EFDAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Jelly.OA.IDAL\Jelly.OA.IDAL.csproj">
+      <Project>{A504D0BD-FE5F-411E-8F80-67A249B44F36}</Project>
+      <Name>Jelly.OA.IDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Jelly.OA.Model\Jelly.OA.Model.csproj">
       <Project>{C468D236-F643-45F2-9B58-F413AB7964CE}</Project>
       <Name>Jelly.OA.Model</Name>
