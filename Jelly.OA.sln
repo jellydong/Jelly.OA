@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.Model", "Jelly.OA.Model\Jelly.OA.Model.csproj", "{C468D236-F643-45F2-9B58-F413AB7964CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.EFDAL", "Jelly.OA.EFDAL\Jelly.OA.EFDAL.csproj", "{A322DF1E-B2B9-476C-BD11-6404C505EE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.Common", "Jelly.OA.Common\Jelly.OA.Common.csproj", "{52CDABD9-0C37-4C6B-910D-28DFDB2B888B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.BLL", "Jelly.OA.BLL\Jelly.OA.BLL.csproj", "{41DB4E64-DC21-4B8B-8009-B148446EF241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.Portal", "Jelly.OA.Portal\Jelly.OA.Portal.csproj", "{909C8E5C-2C15-4939-A12F-5A436D6CCD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.EFDALUnitTests", "Jelly.OA.EFDALUnitTests\Jelly.OA.EFDALUnitTests.csproj", "{EC1A2FB7-DEC8-45BA-A6EF-78DFAF761811}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C468D236-F643-45F2-9B58-F413AB7964CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C468D236-F643-45F2-9B58-F413AB7964CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C468D236-F643-45F2-9B58-F413AB7964CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C468D236-F643-45F2-9B58-F413AB7964CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A322DF1E-B2B9-476C-BD11-6404C505EE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A322DF1E-B2B9-476C-BD11-6404C505EE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A322DF1E-B2B9-476C-BD11-6404C505EE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A322DF1E-B2B9-476C-BD11-6404C505EE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CDABD9-0C37-4C6B-910D-28DFDB2B888B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CDABD9-0C37-4C6B-910D-28DFDB2B888B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CDABD9-0C37-4C6B-910D-28DFDB2B888B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CDABD9-0C37-4C6B-910D-28DFDB2B888B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41DB4E64-DC21-4B8B-8009-B148446EF241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41DB4E64-DC21-4B8B-8009-B148446EF241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41DB4E64-DC21-4B8B-8009-B148446EF241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41DB4E64-DC21-4B8B-8009-B148446EF241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909C8E5C-2C15-4939-A12F-5A436D6CCD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909C8E5C-2C15-4939-A12F-5A436D6CCD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909C8E5C-2C15-4939-A12F-5A436D6CCD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909C8E5C-2C15-4939-A12F-5A436D6CCD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1A2FB7-DEC8-45BA-A6EF-78DFAF761811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1A2FB7-DEC8-45BA-A6EF-78DFAF761811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1A2FB7-DEC8-45BA-A6EF-78DFAF761811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1A2FB7-DEC8-45BA-A6EF-78DFAF761811}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {657C5C93-26FB-4770-AA4D-4D6DE9309980}
+	EndGlobalSection
+EndGlobal
