@@ -15,6 +15,7 @@ namespace Jelly.OA.EFDAL
     public class BaseDal<T> where T:class,new()
     {
         DataModelContainer db = new DataModelContainer();
+
         #region 查询
 
         #region 下面的Lambda表达式的可以代替这两个
