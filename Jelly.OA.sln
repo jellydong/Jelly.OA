@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.EFDALUnitTests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.IDAL", "Jelly.OA.IDAL\Jelly.OA.IDAL.csproj", "{A504D0BD-FE5F-411E-8F80-67A249B44F36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.AdoDAL", "Jelly.OA.AdoDAL\Jelly.OA.AdoDAL.csproj", "{DBB23B32-9DA0-47B8-85FA-B37270523F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jelly.OA.DALFactory", "Jelly.OA.DALFactory\Jelly.OA.DALFactory.csproj", "{4ADDED03-E89E-4489-8700-4A50B637E7B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{A504D0BD-FE5F-411E-8F80-67A249B44F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A504D0BD-FE5F-411E-8F80-67A249B44F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A504D0BD-FE5F-411E-8F80-67A249B44F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB23B32-9DA0-47B8-85FA-B37270523F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB23B32-9DA0-47B8-85FA-B37270523F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB23B32-9DA0-47B8-85FA-B37270523F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB23B32-9DA0-47B8-85FA-B37270523F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ADDED03-E89E-4489-8700-4A50B637E7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADDED03-E89E-4489-8700-4A50B637E7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADDED03-E89E-4489-8700-4A50B637E7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADDED03-E89E-4489-8700-4A50B637E7B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
