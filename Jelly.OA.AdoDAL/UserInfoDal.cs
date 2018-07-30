@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Jelly.OA.AdoDAL
 {
-    public class AdoUserInfoDal : IUserInfoDal
+    public class UserInfoDal : IUserInfoDal
     {
         public OA.Model.UserInfo Add(OA.Model.UserInfo entity)
         {

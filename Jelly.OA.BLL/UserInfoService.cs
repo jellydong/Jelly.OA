@@ -25,7 +25,9 @@ namespace Jelly.OA.BLL
 
         //如果我换了用Ado.Net那么这里的类名不是UserInfoDal了，那么很多地方引用，如果改变了，所有的地方都需要改。
         //希望改一个地方所有的地方都改了，那么就用到了工厂类
-        IUserInfoDal userInfoDal = StaticDalFactory.GetUserInfoDal();
+        private IUserInfoDal userInfoDal = StaticDalFactory.GetUserInfoDal();
+
+        //更高级的： Ioc、DI  依赖注入的方式。Spring.Net
         public UserInfo Add(UserInfo userinfo)
         {
             return userInfoDal.Add(userinfo);
