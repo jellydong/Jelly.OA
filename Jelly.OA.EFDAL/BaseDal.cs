@@ -80,19 +80,21 @@ namespace Jelly.OA.EFDAL
         public T Add(T entity)
         {
             Db.Set<T>().Add(entity);
-            Db.SaveChanges();
+            //Db.SaveChanges();
             return entity;
         }
 
         public bool Update(T entity)
         {
             Db.Entry(entity).State = EntityState.Modified;
-            return Db.SaveChanges() > 0;
+            //return Db.SaveChanges() > 0;
+            return true;
         }
         public bool Delete(T entity)
         {
             Db.Entry(entity).State = EntityState.Deleted;
-            return Db.SaveChanges() > 0;
+            //return Db.SaveChanges() > 0;
+            return true;
         }
 
 

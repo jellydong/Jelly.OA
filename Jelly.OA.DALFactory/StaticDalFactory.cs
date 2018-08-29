@@ -25,7 +25,7 @@ namespace Jelly.OA.DALFactory
             //使用反射，new还是不好,把new去掉，改一个配置，那么创建实列就发生变化，不需要改代码
             //return Assembly.Load("Jelly.OA.EFDAL").CreateInstance("Jelly.OA.EFDAL.UserInfoDal") as IUserInfoDal;
             //改一个配置，那么创建实列就发生变化，不需要改代码
-
+            //反射的方式 获取Dal实列，可以通过配置改变实例
             return Assembly.Load(assemblyName).CreateInstance(assemblyName + ".UserInfoDal") as IUserInfoDal;
         }
 

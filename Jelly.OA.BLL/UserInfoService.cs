@@ -25,12 +25,24 @@ namespace Jelly.OA.BLL
 
         //如果我换了用Ado.Net那么这里的类名不是UserInfoDal了，那么很多地方引用，如果改变了，所有的地方都需要改。
         //希望改一个地方所有的地方都改了，那么就用到了工厂类
-        private IUserInfoDal userInfoDal = StaticDalFactory.GetUserInfoDal();
+        //private IUserInfoDal userInfoDal = StaticDalFactory.GetUserInfoDal();
+
+        private readonly IDbSession dbSession = DbSessionFactory.GetCurrentDbSession();
 
         //更高级的： Ioc、DI  依赖注入的方式。Spring.Net
-        public UserInfo Add(UserInfo userinfo)
+        public UserInfo Add(UserInfo userinfo)//UnitWork单元工作模式。
         {
-            return userInfoDal.Add(userinfo);
+            //return userInfoDal.Add(userinfo);
+            dbSession.UserInfoDal.Add(userinfo);
+            if (dbSession.SaveChanges()>0)
+            {
+                //xxxxx
+            }
+            //dbSession.UserInfoDal.Add(new UserInfo());
+            //上边注释，就是说可以多次操作一次提交
+            dbSession.SaveChanges();//数据提交的权力从数据库访问层提到了业务逻辑层。
+            //SaveChanges内部本身是有事务的
+            return userinfo;
         }
     }
 }
