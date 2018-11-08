@@ -2,7 +2,7 @@
 {
     public interface IDbSession
     {
-         IUserInfoDal UserInfoDal { get; }
+        IUserInfoDal UserInfoDal { get; }
         IOrderInfoDal OrderInfoDal { get; }
         int SaveChanges();
     }

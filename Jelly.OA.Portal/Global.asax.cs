@@ -8,7 +8,7 @@ using System.Web.Routing;
 
 namespace Jelly.OA.Portal
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public class MvcApplication :Spring.Web.Mvc.SpringMvcApplication//System.Web.HttpApplication
     {
         protected void Application_Start()
         {

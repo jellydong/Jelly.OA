@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 07/29/2018 17:31:20
+-- Date Created: 11/06/2018 20:07:46
 -- Generated from EDMX file: F:\MyPrograms\Jelly.OA\Jelly.OA\Jelly.OA.Model\DataModel.edmx
 -- --------------------------------------------------
 
@@ -17,11 +17,20 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_UserInfoOrderInfo]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[OrderInfo] DROP CONSTRAINT [FK_UserInfoOrderInfo];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[UserInfo]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[UserInfo];
+GO
+IF OBJECT_ID(N'[dbo].[OrderInfo]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[OrderInfo];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables
